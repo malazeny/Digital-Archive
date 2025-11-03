@@ -1,0 +1,169 @@
+
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.gallery {
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  padding-top: 4rem;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gif-container {
+  width: 100vw;   
+  position: relative;
+  left: 50%;                
+  right: 50%;
+  margin-left: -50vw;      
+  margin-right: -50vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.gif-container img {
+  width: 100vw;             
+  height: auto;
+  object-fit: cover;
+}
+
+/* Base floating animation */
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Base setup for animals that float */
+.image-card.fish,
+.image-card.fish1,
+.image-card.fish2,
+.image-card.fish3,
+.image-card.fish4,
+.image-card.fish5,
+.image-card.fish6,
+.image-card.fish7,
+.image-card.fish8,
+.image-card.fish9,
+.image-card.fish10,
+.image-card.fish11,
+.image-card.fish12,
+.image-card.fish13,
+.image-card.fish14,
+.image-card.turtle,
+.image-card.swan,
+.image-card.duck {
+position: absolute;
+z-index: 2;
+animation: float 5s ease-in-out infinite;
+}
+
+/* Individual placement and variation */
+
+.image-card.fish{
+  bottom: 15%;   /* overlaps water */
+  left: 25%;
+  animation: swim 7s linear infinite;
+}
+
+.image-card.fish1{
+  bottom: 1%;   /* overlaps water */
+  left: 30%;
+  animation: swim 7s linear infinite;
+}
+.image-card.fish2{
+  bottom: 15%;   /* overlaps water */
+  left: 10%;
+  animation: swim 7s linear infinite;
+}
+.image-card.fish3{
+  bottom: -10vh;   /* overlaps water */
+  left: 20%;
+  animation: swim 7s linear infinite;
+}
+.image-card.fish4{
+  bottom: -1vh;   /* overlaps water */
+  left: 10%;
+  animation: swim 5s linear infinite;
+}
+.image-card.fish5{
+  bottom: 2vh;   /* overlaps water */
+  left: 15%;
+  animation: swim 5s linear infinite;
+}
+.image-card.fish6{
+  bottom: 3vh;   /* overlaps water */
+  left: 55%;
+  animation: swim 5s linear infinite;
+}
+.image-card.fish7{
+  bottom: 2vh;   /* overlaps water */
+  left:70%;
+  animation: swim 5s linear infinite;
+}
+.image-card.fish8{
+  bottom: 10vh;   /* overlaps water */
+  left: 45%;
+  animation: swim 5s linear infinite;
+}
+.image-card.fish9{
+  bottom: 15vh;   /* overlaps water */
+  left: 50%;
+  animation: swim 5s linear infinite;
+}
+.image-card.fish10{
+  bottom: 20vh;   /* overlaps water */
+  left: 20%;
+  animation: swim 5s linear infinite;
+}
+.image-card.fish11{
+  bottom: 30vh;   /* overlaps water */
+  left: 20%;
+  animation: swim 5s linear infinite;
+}
+.image-card.fish12{
+  bottom: 25vh;   /* overlaps water */
+  left: 50%;
+  animation: swim 5s linear infinite;
+}
+
+
+
+.image-card.turtle {
+  bottom: 18%;
+  left: 45%;
+  animation-delay: 1s; /* slightly out of sync for realism */
+}
+
+.image-card.swan {
+  bottom: 36%;
+  left: 65%;
+  animation-delay: 2s;
+}
+
+.image-card.duck {
+  bottom: 36%;
+  left: 50%;
+  animation-delay: 1.5s;
+}
+
+/* Optional: smoother edges for animals */
+.image-card img {
+  border-radius: 12px;
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(0vw); /* Start at the current position */
+  }
+  100% {
+    transform: translateX(100vw); /* Move to the end of the page */
+  }
+}
+
+

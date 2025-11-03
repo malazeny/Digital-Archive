@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "signature";
+    src: url("src/fonts/signature.ttf") format("truetype");
+}
+
+.single-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .single-image img {
+    position: relative;
+    width: 900px;  
+    height: auto;
+    animation: spin 10s linear infinite;
+    z-index: -1;
+  }
+  
+  .single-image h1 {
+    font-family: signature;
+    position: absolute;
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    z-index: 2;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
