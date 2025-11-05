@@ -1,7 +1,11 @@
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -9,38 +13,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-input[type="range"] {
-  -webkit-appearance: none; /* For WebKit browsers like Chrome, Safari */ /* For Mozilla Firefox */
-  appearance: none;         /* Standard property */
- /* Make the background transparent */
-  cursor: pointer;          /* Change cursor on hover */
-  border: none;             /* Remove default border */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
 }
-
-input[type="range"]::-webkit-slider-runnable-track {
-  background: #d3e2ff; /* Example background color */
-  height: 5px;      /* Example height */
-  border-radius: 4px;
+a:hover {
+  color: #535bf2;
 }
-
-
-
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Reset default thumb appearance */
-  appearance: none;
-  background: #007bff; /* Example background color */
-  width: 16px;         /* Example width */
-  height: 16px;        /* Example height */
-  border-radius: 50%;  /* Make it circular */
-  margin-top: -4px;    /* Adjust vertical position for WebKit */
-}
-
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center; 
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center;
+  width: 100%;
+  margin-top: 2rem; 
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 button {
@@ -73,4 +73,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
